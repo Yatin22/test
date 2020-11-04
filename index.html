@@ -10,6 +10,11 @@ body{
   background-image:url('https://wallpapercave.com/wp/wp1896545.jpg');
   background-repeat: no-repeat;
 }
+.dark-mode {
+  
+  background-image:url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/V7hI1imKeijyy0rxl/videoblocks-downtown-miami-beach-at-night-by-aerial-drone_s7pphw0tf_thumbnail-1080_01.png');
+  color: white;
+}
 .div2 {
   width: 250px;
   height: 400px;
@@ -63,6 +68,8 @@ header {
   text-align: center;
   font-size: 35px;
   color: white;
+  width: 1347px;
+  
 }
 
 /* Create two columns/boxes that floats next to each other */
@@ -101,6 +108,7 @@ footer {
   padding: 10px;
   text-align: center;
   color: white;
+  width: 1347px;
 }
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
@@ -135,7 +143,7 @@ footer {
 <h2>Drone Management Site</h2>
 </header>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light"style="width: 1362px;height:40px;background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.htmlcsscolor.com%2Fhex%2FE3F2FD&psig=AOvVaw18shAOQoNBMQtxy2KgWcsN&ust=1604249771655000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPCC76Cm3-wCFQAAAAAdAAAAABAD')">
+<nav class="navbar navbar-expand-lg navbar-light bg-light"style="width: 1347px;height:40px;background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.htmlcsscolor.com%2Fhex%2FE3F2FD&psig=AOvVaw18shAOQoNBMQtxy2KgWcsN&ust=1604249771655000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPCC76Cm3-wCFQAAAAAdAAAAABAD')">
   <a class="navbar-brand" href="https://www.google.com/maps/place/Gurugram,+Haryana"> <img src="part1.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
     Introduction</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -176,6 +184,7 @@ footer {
 </li><li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 </li><li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 </li><li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+</li><li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 </li><li style="float:"right"><form class="form-inline">
     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -235,11 +244,19 @@ technology hub.</p>
 </td>
 </tr>
 </table>
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
 
 
 <footer color-"#f4f4f2">
+
+<button onclick="myFunction()" type="button" class="btn btn-dark" style="float:left;font-size: 10px;text-align: left">Dark Mode</button>
+
   <p>This Website is made and designed by yatin</p>
 </footer>
-
 </body>
 </html>
